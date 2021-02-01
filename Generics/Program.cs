@@ -12,11 +12,13 @@ namespace Generics
             names.Add("person2");
 
 
-            Console.WriteLine(names);
+            Console.WriteLine(names.Length);
 
 
-            List<string> list = new List<string>();
-            Console.WriteLine(list.Count);
+            foreach (var item in names.Items)
+            {
+                Console.WriteLine(item);
+            }
 
 
         }
